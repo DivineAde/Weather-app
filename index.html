@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>weather app</title>
+
+  <!--===================== Font awesome icons ===================-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--===================== Google fonts =====================-->
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!--====================== style ========================-->
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  <div class="weather-app">
+    <div class="container">
+      <h3 class="brand">Topg.dev</h3>
+      <div>
+        <h1 class="temp">30&#176;</h1>
+        <div class="city-time">
+          <h1 class="name">Lagos</h1>
+          <small>
+            <span class="time">06:09</span>
+            <span class="date">Monday Sep 19</span>
+          </small>
+        </div>
+        <div class="weather">
+          <img src="./icons/day/113.png" alt="icon" class="icon" width="50" height="50" />
+          <span class="condition">Mist</span>
+        </div>
+      </div>
+    </div>
+    <div class="panel">
+      <form id="locationInput">
+        <input type="text" class="search" placeholder="Search Location..." /> 
+        <button type="submit" class="submit"><i class="fa fa-search"></i></button>
+      </form>
+      <ul class="cities">
+        <li class="city">Ibadan</li>
+        <li class="city">Kaduna</li>
+        <li class="city">Lagos</li>
+        <li class="city">Anambra</li>
+      </ul>
+
+      <ul class="details">
+        <h4>weather details</h4>
+        <li>
+          <span>Cloudy</span>
+          <span class="cloud">89%</span>
+        </li>
+        <li>
+          <span>Humidity</span>
+          <span class="humidity">64%</span>
+        </li>
+        <li>
+          <span>Wind</span>
+          <span class="wind">8km/h</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+
+  <script src="app.js"></script>
+</body>
+</html> 
